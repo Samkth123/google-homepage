@@ -1,0 +1,139 @@
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+#navbar{
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: "about menu . gmail profile sign-in";
+}
+a{
+    text-decoration: none;
+    color:black;
+    font-size: 13px;
+}
+
+#about{
+    grid-area: about;
+    justify-self: center;
+    align-self: center;
+
+}
+#gmail{
+    grid-area: gmail;
+    justify-self: center;
+    align-self: center;
+
+
+}
+#profile{
+    grid-area: profile;
+    justify-self: center;
+    align-self: center;
+
+
+}
+#sign-in{
+    grid-area: sign-in;
+    justify-self: center;
+    align-self: center;
+
+
+}
+#menu{
+    grid-area: menu;
+    justify-self: center;
+    align-self: center;
+
+}
+
+
+#main{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 70px 70px 100px;
+    grid-template-areas: 
+    ". logo ."
+    ". searchbar ."
+    ". flexbox ."
+    ". language .";  
+}
+
+#flexbox{
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+
+#logo{
+    height: 120px;
+    width: 300px;
+    grid-area: logo;
+    justify-self: center;
+    align-self:end;
+
+}
+#searchbar{
+grid-area: searchbar;
+height:30px;
+align-self: center;
+border-radius: 10px;
+border: 1px solid black;
+}
+#searchbar:hover{
+    box-shadow: 2px 2px 5px grey;
+
+}
+#language{
+    grid-area:language;
+    justify-self: center;
+}
+
+#searchbutton{
+   /* grid-area: searchbutton; */
+   border: none;
+   font-size: 15px;
+   border-radius: 15px;
+
+}
+
+#luckybutton{
+ /* grid-area: lucky;*/
+ border: none;
+ font-size: 15px;
+ border-radius: 15px;
+
+}
+
+/*footer */
+
+#footer{
+  
+    display: grid;
+    grid-template-columns:100px 100px 1fr 100px ;
+    grid-template-areas: "advertising business . terms";
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width:100%
+
+}
+#advertising{
+grid-area: advertising;
+justify-self: center;
+    align-self: center;
+}
+#business{
+grid-area: business;
+justify-self: center;
+    align-self: center;
+}
+
+#Terms{
+grid-area: terms;
+justify-self: center;
+    align-self: center;
+}
